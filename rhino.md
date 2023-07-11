@@ -1,10 +1,4 @@
 <!--badger-->
-<style>
-	body{
-		background: radial-gradient(#8a8a8a,#505050);
-	}
-</style>
-
 # rhino
 
 ## summary
@@ -162,13 +156,3 @@ app.	|	type "`rhino -h`"		|	/usr/local/bin/rhino
 |	hex.(24-bit)		|	0x8			|	0x0000ff	|	0x00ff00	|	0xff0000	|
 
 </div>
-
-<style>
-	.color table{background:grey;}
-
-	.color th{opacity:75%;}
-
-	.color td:nth-child(3){color:blue;}
-	.color td:nth-child(4){color:green;}
-	.color td:nth-child(5){color:red;}
-</style>
