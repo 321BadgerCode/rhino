@@ -30,7 +30,7 @@ social media:
 ---
 ><abbr title="you">u</abbr> can delete `using namespace rhino;` 2, but then you'd have 2 specify `rhino::` <abbr title="before">b4</abbr> it's members.  
 this is an <abbr title="example">ex.</abbr> of a program written in c++ using the `rhino` lib.:
-```
+```cpp
 //badger
 #include <rhino/system/main.h>
 
@@ -58,7 +58,7 @@ int main(){
 `rhino` also supports graphics(using the S.F.M.L. lib.), so u can make games & such.
 however, if u use graphics, u have 2 compile the code w/ S.F.M.L. lib. linked(as shown in makeFile down below in <a href="## make">make</a>).
 >ex. of `rhino` graphics:
-```
+```cpp
 //badger
 #include <rhino/window/main.h>
 
@@ -97,7 +97,7 @@ int main(){
 * name.
 
 >ex. of a make(.mak) file 4 compiling & running a program using the `rhino` lib.:
-```
+```mak
 #badger
 CC=g++
 
