@@ -145,7 +145,7 @@ app.	|	type "`rhino -h`"		|	/usr/local/bin/rhino
 ---
 `rhino` uses a 4-bit, 8-bit, & 24-bit <abbr title="color">clr.</abbr> <abbr title="system">sys.</abbr> as shown in this table:
 
-|				|	intensity		|	$\textcolor{blue}{blue}$		|	$\textcolor{green}{green}$		|	$\textcolor{red}{red}$		|
+|				|	intensity		|	$\textcolor{blue}{\text{blue}}$		|	$\textcolor{green}{\text{green}}$		|	$\textcolor{red}{\text{red}}$		|
 |	:---:			|	:---:			|	:---:		|	:---:		|	:---:		|
 |	abbreviation		|	I			|	B		|	G		|	R		|
 |	bits			|	8			|	4		|	2		|	1		|
