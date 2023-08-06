@@ -1,0 +1,47 @@
+./" Badger
+.TH Rhino 1 "2023-07-28" "Linux" "User Manual"
+.SH NAME
+Rhino \- A set of object-oriented classes for C++ programming
+.SH SYNOPSIS
+.B #include <rhino/main.h>
+.SH DESCRIPTION
+This library provides a set of object-oriented classes for C++ programming.
+.SH SYSTEMS
+.Sh UI(color system for coloring console text using xterm256 color system)
+.br
+Color interpolation.
+.br
+Color bit converting(4 bit rgbi to 8 bit 6x6x6 color cube system).
+.Sh Math
+.br
+Vector with x,y,z members.
+.SH EXAMPLES
+.Bd -literal
+//badger
+#include <rhino/system/main.h>
+
+using namespace rhino;
+
+int main(){
+	console con("SYSTEM!");
+
+	con.print(color::get_ui(color::get_ui(color::get_ui("SYSTEM!",color::type::fg,color::blue),color::type::under_line),color::type::over_line));
+	console::print("");
+
+	console::print("[._.]: "+info::device::get_os(info::device::get_os())+" con. type: "+console::get_type());
+
+	$S a1=console::get_input(new console::text{.a="[._.]: how are you doing today? ",.fg=color::red});
+
+	console::print("[._.]: you inputted: \""+a1+"\"");
+
+	console::pause();
+
+	console::clear();
+
+	return 0;
+}
+.Ed
+.SH SEE ALSO
+.BR my other projects: https://github.com/321BadgerCode?tab=repositories
+.SH AUTHOR
+This manual page was written by Badger Code <https://github.com/321BadgerCode/>
