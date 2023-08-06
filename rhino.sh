@@ -5,8 +5,7 @@
 . /home/badger_code/document/code/sh/etc/key_word.sh
 . /home/badger_code/document/code/sh/etc/load_bar.sh
 
-help(){
-cat <<EOF
+rhino_logo="""
                    .^~~^..             .::.
           .~JPBBBGB#@@@@##G5J7~~~!7J5GB#&&#BP?^.				|	help:
       .^75#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@BY?77^				|
@@ -29,6 +28,11 @@ cat <<EOF
       :5GGGBG57:               5@@@@@@@@@#?7.        ~G#@@@@&#G:		|
                               7@@@@@@@@@BGPY^          .^~~^..			|
                               !PGBPBB57~.					|
+"""
+rhino_logo2="$(base64 -d <<<"H4sICB4aAGMCA3JoaW5vLnR4dAClVDuOxSAM7HOKIEuUdMgSDZEbS1S0aXwUn32B/JO3+xR2miiEmQzY43F8wImqOHddC8ENp1dNmYiYYCoAYJ9QVQ0mX9asBcpRNoIT9G3fN9AcEWVhIU2vwKbxzPQac/PopP1Y7XsBK+rLoadYBEIHv1zg8qhHwKkT4GM9Qerl5/+SfS/ZDELcyQY3mOQcd5GtT3Frcw21/HKUD+CVVmwqIRIvbb+1L5UkSeST7rVDIN88lQzEuezPTWdvB15sBpGaMxVxeomOG+On1qMWi/168jPtp5xxqFcwPxxis3JUyIe7yPGN9yESzwn2VSEo4qoNdwm85nEVOWoAuk6T4Jm59AuGXz1AxH16KTcNCxyG8U8cDojzLI95+IVuMlOZiR7V/QBp9ZRZVAUAAA==" | gunzip)"
+help(){
+cat <<EOF
+$rhino_logo
 EOF
 }
 about(){
@@ -47,12 +51,7 @@ welcome(){
 
 	clear
 
-	echo -e "${blue}$(base64 -d <<<"H4sICB4aAGMCA3JoaW5vLnR4dAClVDuOxSAM7HOKIEuUdMgSDZEbS1S0aXwUn32B/JO3+xR2miiE
-mQzY43F8wImqOHddC8ENp1dNmYiYYCoAYJ9QVQ0mX9asBcpRNoIT9G3fN9AcEWVhIU2vwKbxzPQa
-c/PopP1Y7XsBK+rLoadYBEIHv1zg8qhHwKkT4GM9Qerl5/+SfS/ZDELcyQY3mOQcd5GtT3Frcw21
-/HKUD+CVVmwqIRIvbb+1L5UkSeST7rVDIN88lQzEuezPTWdvB15sBpGaMxVxeomOG+On1qMWi/16
-8jPtp5xxqFcwPxxis3JUyIe7yPGN9yESzwn2VSEo4qoNdwm85nEVOWoAuk6T4Jm59AuGXz1AxH16
-KTcNCxyG8U8cDojzLI95+IVuMlOZiR7V/QBp9ZRZVAUAAA==" | gunzip)${end}\n"
+	echo -e "${blue}$rhino_logo2${end}\n"
 
 	echo -e "${green}[._.]: howdy there${end} ${blue}$(get_user)${end}${green}; welcome to the rhino lib.!${end}"
 	echo -e "[._.]: type \"${orange}rhino -h${end}\" in your terminal 4 help."
